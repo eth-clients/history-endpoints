@@ -1,4 +1,4 @@
-# Ethereum Historial Data Endpoints
+# Ethereum Historical Data Endpoints
 
 This page contains a **community-maintained list of Ethereum historical data endpoints**, including **Era1, Era, Era2 files, and torrents**.
 
