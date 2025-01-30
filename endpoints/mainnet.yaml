@@ -1,0 +1,22 @@
+- endpoint: https://mainnet.era.nimbus.team
+  name: Nimbus
+  format: era
+  torrent: false
+  contacts:
+    - name: "@ethnimbus"
+      link: https://twitter.com/ethnimbus
+- endpoint: https://mainnet.era1.nimbus.team
+  name: Nimbus
+  format: era
+  torrent: false
+  contacts:
+    - name: "@ethnimbus"
+      link: https://twitter.com/ethnimbus
+- endpoint: https://era1.ethportal.net
+  name: EF DevOps
+  format: era1
+  torrent: false
+- endpoint: https://era2.ethportal.net
+  name: EF DevOps
+  format: era2
+  torrent: false

@@ -1,0 +1,14 @@
+- endpoint: https://sepolia.era.nimbus.team
+  name: Nimbus
+  format: era
+  torrent: false
+  contacts:
+    - name: "@ethnimbus"
+      link: https://twitter.com/ethnimbus
+- endpoint: https://sepolia.era1.nimbus.team
+  name: Nimbus
+  format: era1
+  torrent: false
+  contacts:
+    - name: "@ethnimbus"
+      link: https://twitter.com/ethnimbus
