@@ -15,7 +15,7 @@ Additionally, some providers may distribute historical data through **torrents**
 **Type** indicates whether the endpoint is a **torrent** or **web** endpoint.
 -----
 <p align="center" style="display: inline-block"> 
-  <a target=”_blank” href="">View the list here </a>
+  <a target=”_blank” href="https://eth-clients.github.io/history-endpoints">View the list here </a>
 </p>
 
 -----
@@ -28,7 +28,7 @@ If you'd like to add your endpoint to the list please read the [documentation](.
 
 This repository is based on the template from [eth-clients/checkpoint-sync-endpoints](https://github.com/eth-clients/checkpoint-sync-endpoints), adapted to list **Ethereum execution layer historical data providers** instead of Beacon Chain checkpoint sync sources.  
 
-Thanks to the **Ethereum Foundation DevOps team** and the broader **Ethereum community** for supporting decentralized historical data distribution.
+Thanks to the broader **Ethereum community** for supporting decentralized historical data distribution.
 
 ---
 
