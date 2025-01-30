@@ -8,6 +8,7 @@ Historical data providers offer **three primary storage formats**:
 - **Era1**(Pre-Merge) - Archive nodes providing **execution layer history** before The Merge (ETH1).
 - **Era**(Post-Merge) - Execution layer history **from The Merge onward**, including historical block data.
 - **Era2**(State) - **State snapshots** for execution clients.
+- **Erb**(Blob) - Era file equivalent for blob sidecars [ ⚠️ Under Development ].
 
 This registry is designed to **reduce reliance on centralized providers** by creating a **publicly accessible, decentralized list of historical data sources**. It aligns with **EIP-4444** and **Portal Network** efforts to ensure that Ethereum clients can obtain block history **beyond what traditional p2p sync provides**.
 Additionally, some providers may distribute historical data through **torrents**, offering alternative sync options.
