@@ -2,7 +2,7 @@ list(include('endpoint'))
 ---
 endpoint:
   endpoint: str(matches='^(http|https)://.*', ignore_case=True)
-  format: str(matches='^(era|era1|era2|erb)$', ignore_case=True)
+  format: str(matches='^(era|era1|e2ss|erb)$', ignore_case=True)
   name: str()
   torrent: bool(required=False)
   contacts: list(include('contact'), min=0, max=5, required=False)

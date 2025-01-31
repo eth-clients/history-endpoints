@@ -16,7 +16,17 @@
   name: EF DevOps
   format: era1
   torrent: false
+  contacts:
+    - name: "EF DevOps"
+      link: mailto:devops@ethererum.org
+    - name: "@KolbyML"
+      link: https://x.com/Kolby_ML      
 - endpoint: https://era2.ethportal.net
   name: EF DevOps
-  format: era2
+  format: e2ss
   torrent: false
+  contacts:
+    - name: "EF DevOps"
+      link: mailto:devops@ethererum.org
+    - name: "@KolbyML"
+      link: https://x.com/Kolby_ML 
