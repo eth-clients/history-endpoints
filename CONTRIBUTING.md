@@ -71,7 +71,7 @@ Adding a mainnet endpoint involes appending endpoint data to [`endpoints/mainnet
 ```yaml
 - endpoint: https://history-sync.example.com
   name: example.com
-  format: era2
+  format: e2ss
   torrent: false
   notes:
     - name: "Status page"
@@ -85,7 +85,7 @@ Adding a mainnet endpoint involes appending endpoint data to [`endpoints/mainnet
 ```yaml
 - endpoint: https://history-sync.example.com
   name: example.com
-  format: era2
+  format: e2ss
   torrent: true
 ```
 
