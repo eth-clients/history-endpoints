@@ -21,7 +21,7 @@
       link: mailto:devops@ethererum.org
     - name: "@KolbyML"
       link: https://x.com/Kolby_ML      
-- endpoint: https://era2.ethportal.net
+- endpoint: https://e2ss.ethportal.net
   name: EF DevOps
   format: e2ss
   torrent: false
