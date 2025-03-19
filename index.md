@@ -7,9 +7,9 @@ This page contains a **community-maintained list of Ethereum historical data end
 > ⚠️ This list should not be treated as a single source of truth for these endpoints, or the data they provide. It is a **community-maintained list**, and as such, some endpoints listed here may not be up to date, or may not provide the data they claim to be providing.
 
 Historical data providers offer **three primary storage formats**:
-- **Era1** [Spec](https://github.com/ethereum/go-ethereum/pull/26621#issue-1573139029) - Execution layer historical block data **before The Merge**.
-- **Era** [Spec](https://github.com/status-im/nimbus-eth2/blob/613f4a9a50c9c4bd8568844eaffb3ac15d067e56/docs/e2store.md#era-files) - Consensys layer historical block data **from The Merge onward**.
-- **E2SS** [Spec](https://github.com/ethereum/trin/blob/f0187cbddd2a8a6d3ebaefa250dd6136fb5816cb/crates/e2store/src/e2ss.rs#L1-L26) - **State snapshots** for execution clients.
+- **Era1** [Spec](https://github.com/eth-clients/e2store-format-specs/blob/main/formats/era1.md) - Execution layer historical block data **before The Merge**.
+- **Era** [Spec](https://github.com/eth-clients/e2store-format-specs/blob/main/formats/era.md) - Consensys layer historical block data **from The Merge onward**.
+- **E2SS** [Spec](https://github.com/eth-clients/e2store-format-specs/blob/main/formats/e2ss.md) - **State snapshots** for execution clients.
 - **Erb** [Spec](https://github.com/status-im/nimbus-eth2/pull/5882) - Era file equivalent for blob sidecars [ ⚠️ Under Development ].
 
 This registry is designed to **reduce reliance on centralized providers** by creating a **publicly accessible, decentralized list of historical data sources**. It aligns with **EIP-4444** and **Portal Network** efforts to ensure that Ethereum clients can obtain block history **beyond what traditional p2p sync provides**.
