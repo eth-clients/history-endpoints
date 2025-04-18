@@ -21,9 +21,18 @@
       link: mailto:devops@ethererum.org
     - name: "@KolbyML"
       link: https://x.com/Kolby_ML      
-- endpoint: https://e2ss.ethportal.net
+- endpoint: https://e2ss.ethportal.net/index.html
   name: EF DevOps
   format: e2ss
+  torrent: false
+  contacts:
+    - name: "EF DevOps"
+      link: mailto:devops@ethererum.org
+    - name: "@KolbyML"
+      link: https://x.com/Kolby_ML 
+- endpoint: https://e2hs.ethportal.net/index.html
+  name: EF DevOps
+  format: e2hs
   torrent: false
   contacts:
     - name: "EF DevOps"
