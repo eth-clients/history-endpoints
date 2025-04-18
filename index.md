@@ -2,14 +2,15 @@
 layout: default
 ---
 
-This page contains a **community-maintained list of Ethereum historical data endpoints**, including **Era1, Era, E2SS files, and torrents**.
+This page contains a **community-maintained list of Ethereum historical data endpoints**, including **Era1, Era, E2SS, E2HS files, and torrents**.
 
 > ⚠️ This list should not be treated as a single source of truth for these endpoints, or the data they provide. It is a **community-maintained list**, and as such, some endpoints listed here may not be up to date, or may not provide the data they claim to be providing.
 
-Historical data providers offer **three primary storage formats**:
+Historical data providers offer **four primary storage formats**:
 - **Era1** [Spec](https://github.com/eth-clients/e2store-format-specs/blob/main/formats/era1.md) - Execution layer historical block data **before The Merge**.
-- **Era** [Spec](https://github.com/eth-clients/e2store-format-specs/blob/main/formats/era.md) - Consensys layer historical block data **from The Merge onward**.
+- **Era** [Spec](https://github.com/eth-clients/e2store-format-specs/blob/main/formats/era.md) - Stores data from the genesis of the Beacon Chain onwards. Can be used by Execution layer clients for history **from The Merge onward**, including historical block data.
 - **E2SS** [Spec](https://github.com/eth-clients/e2store-format-specs/blob/main/formats/e2ss.md) - **State snapshots** for execution clients.
+- **E2HS** [Spec](https://github.com/eth-clients/e2store-format-specs/blob/main/formats/e2hs.md) - **full execution layer history** for execution clients, provides data from genesis to latest, headers are accompanied by proofs of canonicalness.
 - **Erb** [Spec](https://github.com/status-im/nimbus-eth2/pull/5882) - Era file equivalent for blob sidecars [ ⚠️ Under Development ].
 
 This registry is designed to **reduce reliance on centralized providers** by creating a **publicly accessible, decentralized list of historical data sources**. It aligns with **EIP-4444** and **Portal Network** efforts to ensure that Ethereum clients can obtain block history **beyond what traditional p2p sync provides**.
