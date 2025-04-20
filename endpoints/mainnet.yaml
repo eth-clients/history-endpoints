@@ -12,7 +12,7 @@
   contacts:
     - name: "@ethnimbus"
       link: https://twitter.com/ethnimbus
-- endpoint: https://era1.ethportal.net
+- endpoint: https://era1.ethportal.net/index.html
   name: EF DevOps
   format: era1
   torrent: false
