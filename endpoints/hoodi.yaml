@@ -1,0 +1,7 @@
+- endpoint: https://hoodi.era.nimbus.team
+  name: Nimbus
+  format: era
+  torrent: false
+  contacts:
+    - name: "@ethnimbus"
+      link: https://twitter.com/ethnimbus
