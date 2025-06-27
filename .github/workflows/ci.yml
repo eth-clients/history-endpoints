@@ -15,8 +15,9 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y make pandoc texlive texlive-xetex texlive-fonts-recommended texlive-plain-generic build-essential curl libffi-dev libffi6 libgmp-dev libgmp10 libncurses-dev libncurses5 libtinfo5
+          sudo apt-get install -y make pandoc texlive texlive-xetex texlive-fonts-recommended texlive-plain-generic build-essential curl libffi-dev libffi8ubuntu1 libgmp-dev libgmp10 libncurses-dev
           curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+          echo "$HOME/.cabal/bin" >> $GITHUB_PATH
           cabal install pandoc-sidenote
       - name: Run Makefile
         run: make
