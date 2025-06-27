@@ -7,7 +7,7 @@ on:
 
 permissions:
   contents: read
-  pages: writeAdd commentMore actions
+  pages: write
   id-token: write
 
 concurrency:
