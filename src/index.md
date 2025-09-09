@@ -46,7 +46,7 @@ All historical beacon chain data for the corresponding networks is available fro
 ### Sepolia
 
 - Mirrors
-    - [https://holesky.era.nimbus.team](https://holesky.era.nimbus.team/)
+    - [https://sepolia.era.nimbus.team](https://sepolia.era.nimbus.team/)
 
 ### Holesky
 
