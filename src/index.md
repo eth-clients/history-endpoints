@@ -29,7 +29,7 @@ Historical data starting at genesis on July 30, 2015 and ending at the merge blo
 - Magnet link (TBA)
 - Torrent link (TBA)
 - Mirrors
-    - [https://data.ethpandaops.io/era1/sepolia/](https://data.ethpandaops.io/era1/mainnet/)
+    - [https://data.ethpandaops.io/era1/sepolia/](https://data.ethpandaops.io/era1/sepolia/)
     - [https://sepolia.era1.nimbus.team](https://mainnet.era1.nimbus.team/)
 
 Each file can be verified for correctness by importing into a supporting Ethereum client. For fast verification, each `era1` source includes a list of `sha256`  hashes in `checksums.txt` that correspond with every `era1` file.
