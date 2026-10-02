@@ -6,13 +6,34 @@ The Ethereum blockchain consists of all block and transaction data from genesis.
 
 Below is a list of providers offering complete historical archive of the Ethereum protocol. While many nodes store this data locally, some newer forms of nodes may choose to implement EIP-4444 and only download recent history and account state to verify blocks. These archives are made available for historical inspection, client bootstrapping, and independent verification.
 
-For more information on the archive formats see the specifications for [`era1`][era1] and [`era`][era]. To use these endpoints and data files, consult the corresponding Ethereum client documentation.
+For more information on the archive formats see the specifications for [`ere`][ere], [`era1`][era1] and [`era`][era]. To use these endpoints and data files, consult the corresponding Ethereum client documentation.
 
-## Proof-of-work chain
+## Execution chain
 
-The proof-of-work chain preceeded the current proof-of-stake chain and has a
-slightly different format for block data. Only Mainnet and Sepolia remain as
-active networks with a PoW prefix. 
+The [`ere`][ere] format covers the execution chain over its full range, from
+genesis across the merge and onwards. It supersedes [`era1`][era1], which is
+limited to the pre-merge range, and is the format to use for new execution layer
+archives.
+
+### Mainnet
+
+- Mirrors (TBA)
+
+### Sepolia
+
+- Mirrors
+    - [https://sepolia.ere.nimbus.team](https://sepolia.ere.nimbus.team/)
+
+### Hoodi
+
+- Mirrors
+    - [https://hoodi.ere.nimbus.team](https://hoodi.ere.nimbus.team/)
+
+## Execution chain, pre-merge only
+
+The [`era1`][era1] format covers the execution chain from genesis up to the
+merge block. Only Mainnet and Sepolia have a pre-merge range. These blocks are
+also covered by `ere`.
 
 ### Mainnet
 
@@ -34,9 +55,11 @@ Historical data starting at genesis on July 30, 2015 and ending at the merge blo
 
 Each file can be verified for correctness by importing into a supporting Ethereum client. For fast verification, each `era1` source includes a list of `sha256`  hashes in `checksums.txt` that correspond with every `era1` file.
 
-## Proof-of-stake chain
+## Beacon chain
 
-All historical beacon chain data for the corresponding networks is available from the following sources.
+The [`era`][era] format covers the beacon chain from its genesis onwards. Until
+the Gloas fork it also carries the execution blocks as payloads. After Gloas,
+execution clients need `ere` for that data.
 
 ### Mainnet
 
@@ -59,6 +82,7 @@ Each epoch corresponds to a value in the beacon state’s `historical_roots` acc
 
 If your organization is interested in hosting historical data and being listed as a mirror here, please send an email to `historydata@ethereum.org` .
 
+[ere]: https://github.com/eth-clients/e2store-format-specs/blob/main/formats/ere.md
 [era1]: https://github.com/eth-clients/e2store-format-specs/blob/main/formats/era1.md
 [era]: https://github.com/eth-clients/e2store-format-specs/blob/main/formats/era.md
 [4444]: https://eips.ethereum.org/EIPS/eip-4444
