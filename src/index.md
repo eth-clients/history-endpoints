@@ -65,11 +65,15 @@ execution clients need `ere` for that data.
 
 - Mirrors
     - [https://mainnet.era.nimbus.team](https://mainnet.era.nimbus.team/)
+    - [https://data.ethpandaops.io/erae/mainnet](https://data.ethpandaops.io/erae/mainnet/)
+    - [https://erae.nethermind.dev](https://erae.nethermind.dev/)
 
 ### Sepolia
 
 - Mirrors
     - [https://sepolia.era.nimbus.team](https://sepolia.era.nimbus.team/)
+    - [https://data.ethpandaops.io/erae/sepolia](https://data.ethpandaops.io/erae/sepolia/)
+    - [https://erae-sepolia.nethermind.dev](https://erae-sepolia.nethermind.dev/)
 
 ### Hoodi
 
