@@ -17,7 +17,8 @@ archives.
 
 ### Mainnet
 
-- Mirrors (TBA)
+- Mirrors
+    - [https://mainnet.ere.nimbus.team](https://mainnet.ere.nimbus.team/)
 
 ### Sepolia
 
