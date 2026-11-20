@@ -4,14 +4,13 @@ on:
   push:
     branches:
       - master
+  pull_request:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -25,18 +24,26 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y make pandoc texlive texlive-xetex texlive-fonts-recommended texlive-plain-generic build-essential curl libffi-dev libffi8ubuntu1 libgmp-dev libgmp10 libncurses-dev
-          curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
-          echo "$HOME/.cabal/bin" >> $GITHUB_PATH
-          cabal install pandoc-sidenote
+          sudo apt-get install -y make pandoc build-essential libffi-dev libgmp-dev libncurses-dev
+          echo "$HOME/.cabal/bin" >> "$GITHUB_PATH"
+      - uses: haskell-actions/setup@v2
+        with:
+          ghc-version: '9.10'
+      - name: Install pandoc-sidenote
+        run: cabal install pandoc-sidenote --install-method=copy --installdir="$HOME/.cabal/bin"
       - name: Run Makefile
         run: make
       - name: Upload static files as artifact
+        if: github.event_name == 'push'
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/
   deploy:
+    if: github.event_name == 'push'
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
